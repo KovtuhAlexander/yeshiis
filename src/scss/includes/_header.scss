@@ -1,0 +1,28 @@
+.header {
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	text-align: center;
+
+	&__head {
+		color: $text-color;
+		font-size: 36px;
+		font-weight: 900;
+		line-height: 48px;
+
+		strong {
+			color: $contrast;
+		}
+	}
+
+	&__subHead {
+		color: $text-color;
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+
+.hidden {
+	display: none;
+}

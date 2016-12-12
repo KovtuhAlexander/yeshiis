@@ -1,0 +1,56 @@
+.promo {
+	text-align: center;
+
+	&__social {
+		margin: 62px 0;
+
+		&_vk {
+			display: inline-block;
+			width: 45px;
+			height: 45px;
+			margin-right: 20px;
+			transition: background-color 200ms ease-in-out;
+			border-radius: 50%;
+			background-color: $social-bg;
+			background-image: url('../img/icons.svg');
+			background-repeat: no-repeat;
+			background-position-y: center;
+			background-position-x: 15px;
+
+			&:hover {
+				background-color: $contrast;
+			}
+		}
+
+		&_fb {
+			@extend .promo__social_vk;
+			background-position-x: -32px;
+		}
+
+		&_ok {
+			@extend .promo__social_vk;
+			background-position-x: -76px;
+		}
+
+		&_mail {
+			@extend .promo__social_vk;
+			background-position-x: -121px;
+		}
+	}
+
+	&__wrap {
+		max-width: 733px;
+		margin: 0 auto;
+		padding-bottom: 100px;
+	}
+
+	&__content {
+		color: $text-color;
+		font-size: 18px;
+		line-height: 24px;
+
+		strong {
+			color: $contrast;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "myproject",
+  "description": "Gulp Project",
+  "main": "index.js",
+  "authors": [
+    "Alex"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "normalize-css": "^5.0.0",
+    "parallax.js": "^1.4.2"
+  },
+  "devDependencies": {
+    "scrollreveal": "^3.3.2",
+    "magnific-popup": "^1.1.0",
+    "malihu-custom-scrollbar-plugin": "^3.1.5"
+  }
+}

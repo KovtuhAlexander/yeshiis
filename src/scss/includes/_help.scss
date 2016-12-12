@@ -1,0 +1,120 @@
+.help-wrap {
+	position: relative;
+	width: 1170px;
+	height: 565px;
+	margin: 0 auto;
+}
+
+.left-box {
+	display: inline-block;
+	width: 585px;
+	margin-top: -4px;
+	margin-bottom: -4px;
+	padding: 144px;
+	float: left;
+	background-color: $popup-contrast;
+
+
+	&__head {
+		width: 224px;
+		margin: 0;
+		color: $white;
+		font-size: 28px;
+		font-weight: 900;
+		line-height: 28px;
+		text-transform: uppercase;
+	}
+
+	&__content {
+		width: 293px;
+		margin-top: 27px;
+		color: $white;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 22px;
+	}
+}
+
+.right-box {
+	display: inline-block;
+	width: 585px;
+	height: 451px;
+	margin-top: -4px;
+	margin-bottom: -4px;
+	background-color: $white;
+	overflow: auto;
+}
+
+#help-form {
+	padding: 102px 140px;
+
+	.name {
+		display: inline-block;
+		width: 140px;
+
+		input[type="text"] {
+			width: 140px;
+			height: 35px;
+			margin-top: 3px;
+			border: 1px solid $form-border;
+			border-radius: 10px;
+		}
+	}
+
+	.email {
+		@extend .name;
+		margin-left: 20px;
+
+		input[type="email"] {
+			@extend input[type="text"];
+		}
+	}
+
+	.textarea {
+		display: inline-block;
+		width: 300px;
+		margin-top: 18px;
+
+		textarea {
+			margin-top: 6px;
+			border: 1px solid $form-border;
+			border-radius: 10px;
+		}
+	}
+
+	input[type="submit"] {
+		display: inline-block;
+		width: 269px;
+		margin-top: 20px;
+		padding: 13px 42px;
+		transition: background-color 200ms ease-in-out;
+		border: 0 none;
+		background-color: $contrast;
+		color: $white;
+		font-size: 18px;
+		text-decoration: none;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $hover-link;
+		}
+
+	}
+
+	label {
+		margin-bottom: 8px;
+		color: $text-color;
+		font-size: 9px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+
+// srollbar
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background-color: $contrast;
+}
+
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCS-minimal.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+	background-color: $contrast;
+}

@@ -1,0 +1,46 @@
+html {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.logo {
+	display: inline-block;
+	margin-top: 70px;
+	margin-bottom: 6px;
+}
+
+
+.link {
+	display: block;
+	width: 269px;
+	margin-top: 10px;
+	margin-left: 185px;
+	padding: 13px 42px;
+	transition: background-color 200ms ease-in-out;
+	background-color: $contrast;
+	color: $white;
+	font-size: 18px;
+	text-decoration: none;
+
+	&:hover {
+		background-color: $hover-link;
+	}
+
+	&_parallax {
+		@extend .link;
+		margin: 0 auto;
+	}
+}
